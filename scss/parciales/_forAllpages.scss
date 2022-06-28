@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@200&family=League+Gothic&family=Macondo&family=Oswald:wght@400;600&family=Poller+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
 
 /*Reset y atributos para todas las paginas*/
 
@@ -12,12 +12,12 @@
 body {
     background-color: map-get($colores, "back");
     color: map-get($colores, "blanco");
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
     color: map-get($colores, "dorado");
-    font-family: 'League Gothic', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 h2 {

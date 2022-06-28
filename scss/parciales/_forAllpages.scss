@@ -12,7 +12,6 @@
 body {
     background-color: map-get($colores, "back");
     color: map-get($colores, "blanco");
-    font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -22,6 +21,7 @@ h1 {
 
 h2 {
     color: map-get($colores, "dorado");
+    font-family: 'Open Sans', sans-serif;
 }
 
 li {

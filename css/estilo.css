@@ -9,15 +9,15 @@
 
 body {
   background-color: #000000eb;
-  color: #f3ebeb;
-  font-family: 'Open Sans', sans-serif; }
+  color: #f3ebeb; }
 
 h1 {
   color: #ffd700;
   font-family: 'Roboto', sans-serif; }
 
 h2 {
-  color: #ffd700; }
+  color: #ffd700;
+  font-family: 'Open Sans', sans-serif; }
 
 li {
   transition: background 3s; }

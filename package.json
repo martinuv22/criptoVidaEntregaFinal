@@ -1,0 +1,25 @@
+{
+    "name": "trabajosass",
+    "version": "1.0.0",
+    "description": "Trabajo aplicando Sass",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build-css": "node-sass --include-path scss scss/main.scss css/estilo.css",
+        "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/martinuv22/proyectoFinal.git"
+    },
+    "author": "Martin Utrera",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/martinuv22/proyectoFinal/issues"
+    },
+    "homepage": "https://github.com/martinuv22/proyectoFinal#readme",
+    "devDependencies": {
+        "node-sass": "^7.0.1",
+        "nodemon": "^2.0.16"
+    }
+}

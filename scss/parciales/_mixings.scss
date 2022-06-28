@@ -1,0 +1,19 @@
+    @mixin box {
+        padding: 2rem 30%;
+        margin-bottom: 2rem;
+        color: map-get($colores, "dorado");
+        padding: 2rem 30%;
+        font-family: 'Poller One', cursive;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        height: 40rem;
+    }
+    
+    @mixin vos {
+        border-radius: 10%;
+        color: map-get($colores, "cont");
+        background-color: map-get($colores, "dorado");
+        border: solid 0.5rem map-get($colores, "boton");
+        transition: padding 3s;
+    }

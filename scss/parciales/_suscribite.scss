@@ -1,0 +1,38 @@
+/*paginas sucripciones*/
+
+.grilla__suscribite {
+    display: grid;
+    grid-template-areas: "sucripcion3" "pie4";
+    grid-template-columns: 1fr;
+    grid-template-rows: 90% 10%;
+}
+
+.suscripciones {
+    grid-area: sucripcion3;
+}
+
+.suscripcion {
+    &__titulo {
+        color: map-get($colores, "destacado");
+        font-family: 'Kodchasan', sans-serif;
+    }
+    &__sectionf {
+        @include box;
+    }
+    &__boton {
+        @include vos;
+        padding: 2.2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        &:hover {
+            padding: 5rem;
+        }
+    }
+    &__aviso {
+        color: map-get($colores, "destacado");
+    }
+}
+
+.pie__supcripcion {
+    grid-area: pie4;
+}

@@ -1,0 +1,30 @@
+/* Pagina donde comprar carrousel*/
+
+.carousel__dondecomprar img {
+    height: 90vh;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-item p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .carousel-item p {
+        font-size: 1.5rem;
+    }
+}
+
+.boton__dondecomprar {
+    border-radius: 5%;
+    color: map-get($colores, "cont");
+    background-color: map-get($colores, "dorado");
+    border: solid 0.2rem map-get($colores, "boton");
+}
+
+.titulo_dondecomprar {
+    font-size: medium;
+    color: map-get($colores, "suscripcion");
+}

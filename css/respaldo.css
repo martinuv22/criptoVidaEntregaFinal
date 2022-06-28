@@ -1,0 +1,117 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    color: gold;
+}
+
+li {
+    transition: background 3s;
+}
+
+li:hover {
+    background-color: gold;
+}
+
+
+/*pagina info*/
+
+.section__contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+
+/*para index*/
+
+.div__imagen {
+    margin: auto;
+    border-radius: 20%;
+    object-fit: cover;
+    width: 47rem;
+    height: 23rem;
+    transition: height 1s, width 1s;
+}
+
+.div__imagen:hover {
+    width: 55rem;
+    height: 31rem;
+}
+
+
+/* pagina contacto*/
+
+.grilla__contacto {
+    display: grid;
+    grid-template-areas: "contenido3" "pie3";
+    grid-template-columns: 1fr;
+    grid-template-rows: 90% 10%;
+}
+
+.contenido__contacto {
+    grid-area: contenido3;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie__contacto {
+    grid-area: pie3;
+}
+
+.h1__body {
+    color: rgb(6, 6, 221);
+    font-family: 'Kodchasan', sans-serif;
+}
+
+#sectionf {
+    color: rgb(6, 6, 221);
+    padding: 2rem 30%;
+    font-family: 'Poller One', cursive;
+    text-align: center;
+    color: goldenrod;
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+}
+
+.textarea {
+    padding: 5rem;
+}
+
+.header__button {
+    padding: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10%;
+    color: rgb(6, 6, 221);
+    background-color: goldenrod;
+    border: solid 0.5rem brown;
+    transition: padding 3s;
+}
+
+.header__button:hover {
+    padding: 2rem;
+}
+
+
+/* Pagina donde comprar carrousel*/
+
+.caousel__dondecomprar {
+    height: 90vh;
+}
+
+.carousel img {
+    height: 90vh;
+}

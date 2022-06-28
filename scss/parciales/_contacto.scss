@@ -1,0 +1,35 @@
+    /*pagina contacto*/
+    
+    .grilla__contacto {
+        display: grid;
+        grid-template-areas: "contenido3" "pie3";
+        grid-template-columns: 1fr;
+        grid-template-rows: 90% 10%;
+    }
+    
+    .contenidos {
+        grid-area: contenido3;
+    }
+    
+    .contenido {
+        &__titulo {
+            color: map-get($colores, "cont");
+            font-family: 'Kodchasan', sans-serif;
+        }
+        &__sectionf {
+            @include box;
+        }
+        &__boton {
+            padding: 1.2rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            @include vos;
+            &:hover {
+                padding: 2rem;
+            }
+        }
+    }
+    
+    .pie__contacto {
+        grid-area: pie3;
+    }

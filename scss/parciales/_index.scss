@@ -1,0 +1,48 @@
+                /*para index*/
+                
+                .main_p1 {
+                    color: map-get($colores, "blanco")
+                }
+                
+                .division {
+                    color: map-get($colores, "dorado");
+                }
+                
+                .div__imagen {
+                    margin: 2rem;
+                    border-radius: 20%;
+                    object-fit: cover;
+                    width: 47rem;
+                    height: 23rem;
+                    transition: height 1s, width 1s;
+                    &:hover {
+                        width: 55rem;
+                        height: 31rem;
+                    }
+                }
+                
+                @media screen and (max-width: 425px) {
+                    .div__imagen {
+                        margin: 2%;
+                        width: 50%;
+                        height: 50%;
+                    }
+                }
+                
+                .body__p {
+                    color: map-get($colores, "destacado");
+                }
+                
+                .boton__index {
+                    padding: 1.2rem;
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                    border-radius: 10%;
+                    color: map-get($colores, "cont");
+                    background-color: map-get($colores, "dorado");
+                    border: solid 0.5rem map-get($colores, "boton");
+                    transition: padding 3s;
+                    &:hover {
+                        padding: 2rem;
+                    }
+                }

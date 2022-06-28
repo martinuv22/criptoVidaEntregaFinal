@@ -1,0 +1,57 @@
+/*pagina info*/
+
+.main__info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem 5rem;
+    align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+    .main__info {
+        margin: 1rem 2rem;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .main__info {
+        margin: 1rem 3rem;
+    }
+}
+
+.recordatorio {
+    color: map-get($colores, "suscripcion");
+}
+
+@media screen and (max-width: 500px) {
+    .iframe2 {
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+@media screen and (min-width: 501px) {
+    .iframe2 {
+        width: 25rem;
+        height: 20rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .iframe2 {
+        width: 40rem;
+        height: 32rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .iframe2 {
+        width: 48rem;
+        height: 32rem;
+    }
+}
+
+.boton__info {
+    @extend .contenido__boton
+}

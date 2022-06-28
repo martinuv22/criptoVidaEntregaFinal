@@ -1,0 +1,52 @@
+/*paginas recomendaciones*/
+
+.grilla_recomendacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    align-items: start;
+    justify-content: start;
+    grid-template-rows: 1fr 1fr;
+}
+
+@media screen and (max-width: 1024px) {
+    .grilla_recomendacion {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cripto {
+    padding: 5rem;
+    &__imagen {
+        height: 50vh;
+        width: 80vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cripto {
+        padding: 1rem;
+        &__imagen {
+            height: 50vh;
+            width: 50vh;
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .cripto {
+        padding: 3rem;
+        &__imagen {
+            height: 50vh;
+            width: 60vh;
+        }
+    }
+}
+
+.aviso {
+    color: map-get($colores, "suscripcion");
+}
+
+.boton__recomendacion {
+    @extend .contenido__boton
+}

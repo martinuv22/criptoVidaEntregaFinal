@@ -20,7 +20,15 @@
     }
 }
 
-.recordatorio {
+.sectionInfo {
+    padding-top: 4rem;
+    &__frase {
+        color: map-get($colores, "destacado");
+    }
+}
+
+.recordatorio__info {
+    padding-top: 4rem;
     color: map-get($colores, "suscripcion");
 }
 

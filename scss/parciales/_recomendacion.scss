@@ -15,6 +15,15 @@
     }
 }
 
+.titulo__recomendacion {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.subtitulo__recomendacion {
+    color: map-get($colores, "destacado");
+}
+
 .cripto {
     padding: 5rem;
     &__imagen {

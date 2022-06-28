@@ -13,8 +13,12 @@
     
     .contenido {
         &__titulo {
-            color: map-get($colores, "cont");
+            text-align: center;
+        }
+        &__subtitulo {
+            color: map-get($colores, "destacado");
             font-family: 'Kodchasan', sans-serif;
+            padding-top: 2rem;
         }
         &__sectionf {
             @include box;

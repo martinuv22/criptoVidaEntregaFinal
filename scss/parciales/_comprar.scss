@@ -28,3 +28,9 @@
     font-size: medium;
     color: map-get($colores, "suscripcion");
 }
+
+@media screen and (min-width: 760px) {
+    .titulo_dondecomprar {
+        font-size: larger;
+    }
+}

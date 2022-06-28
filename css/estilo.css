@@ -1,4 +1,6 @@
 /*mapa*/
+@import url("https://fonts.googleapis.com/css2?family=Kodchasan:wght@200&family=League+Gothic&family=Macondo&family=Oswald:wght@400;600&family=Poller+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /*Reset y atributos para todas las paginas*/
 * {
   padding: 0%;
@@ -7,10 +9,12 @@
 
 body {
   background-color: #000000eb;
-  color: #f3ebeb; }
+  color: #f3ebeb;
+  font-family: 'Roboto', sans-serif; }
 
 h1 {
-  color: #ffd700; }
+  color: #ffd700;
+  font-family: 'League Gothic', sans-serif; }
 
 h2 {
   color: #ffd700; }
@@ -113,7 +117,13 @@ li:hover {
   .main__info {
     margin: 1rem 3rem; } }
 
-.recordatorio {
+.sectionInfo {
+  padding-top: 4rem; }
+  .sectionInfo__frase {
+    color: tomato; }
+
+.recordatorio__info {
+  padding-top: 4rem;
   color: #8713f5; }
 
 @media screen and (max-width: 500px) {
@@ -159,6 +169,10 @@ li:hover {
   font-size: medium;
   color: #8713f5; }
 
+@media screen and (min-width: 760px) {
+  .titulo_dondecomprar {
+    font-size: larger; } }
+
 /*pagina contacto*/
 .grilla__contacto {
   display: grid;
@@ -170,8 +184,12 @@ li:hover {
   grid-area: contenido3; }
 
 .contenido__titulo {
-  color: #0303f0;
-  font-family: 'Kodchasan', sans-serif; }
+  text-align: center; }
+
+.contenido__subtitulo {
+  color: tomato;
+  font-family: 'Kodchasan', sans-serif;
+  padding-top: 2rem; }
 
 .contenido__sectionf {
   padding: 2rem 30%;
@@ -212,6 +230,13 @@ li:hover {
   .grilla_recomendacion {
     grid-template-columns: 1fr; } }
 
+.titulo__recomendacion {
+  text-align: center;
+  padding-bottom: 3rem; }
+
+.subtitulo__recomendacion {
+  color: tomato; }
+
 .cripto {
   padding: 5rem; }
   .cripto__imagen {
@@ -246,6 +271,9 @@ li:hover {
   grid-area: sucripcion3; }
 
 .suscripcion__titulo {
+  text-align: center; }
+
+.suscripcion__subtitulo {
   color: tomato;
   font-family: 'Kodchasan', sans-serif; }
 
@@ -273,7 +301,7 @@ li:hover {
     padding: 5rem; }
 
 .suscripcion__aviso {
-  color: tomato; }
+  color: #8713f5; }
 
 .pie__supcripcion {
   grid-area: pie4; }

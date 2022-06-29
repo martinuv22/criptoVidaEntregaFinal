@@ -1,14 +1,10 @@
 /*paginas sucripciones*/
 
 .grilla__suscribite {
-    display: grid;
-    grid-template-areas: "sucripcion3" "pie4";
-    grid-template-columns: 1fr;
-    grid-template-rows: 90% 10%;
-}
-
-.suscripciones {
-    grid-area: sucripcion3;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 5rem;
+    align-items: center;
 }
 
 .suscripcion {
@@ -34,8 +30,4 @@
     &__aviso {
         color: map-get($colores, "suscripcion");
     }
-}
-
-.pie__supcripcion {
-    grid-area: pie4;
 }

@@ -174,14 +174,11 @@ li:hover {
     font-size: larger; } }
 
 /*pagina contacto*/
-.grilla__contacto {
-  display: grid;
-  grid-template-areas: "contenido3" "pie3";
-  grid-template-columns: 1fr;
-  grid-template-rows: 90% 10%; }
-
 .contenidos {
-  grid-area: contenido3; }
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 5rem;
+  align-items: center; }
 
 .contenido__titulo {
   text-align: center; }
@@ -213,9 +210,6 @@ li:hover {
   transition: padding 3s; }
   .contenido__boton:hover, .boton__info:hover, .boton__recomendacion:hover {
     padding: 2rem; }
-
-.pie__contacto {
-  grid-area: pie3; }
 
 /*paginas recomendaciones*/
 .grilla_recomendacion {
@@ -262,13 +256,10 @@ li:hover {
 
 /*paginas sucripciones*/
 .grilla__suscribite {
-  display: grid;
-  grid-template-areas: "sucripcion3" "pie4";
-  grid-template-columns: 1fr;
-  grid-template-rows: 90% 10%; }
-
-.suscripciones {
-  grid-area: sucripcion3; }
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 5rem;
+  align-items: center; }
 
 .suscripcion__titulo {
   text-align: center; }
@@ -302,6 +293,3 @@ li:hover {
 
 .suscripcion__aviso {
   color: #8713f5; }
-
-.pie__supcripcion {
-  grid-area: pie4; }

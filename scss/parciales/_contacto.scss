@@ -1,39 +1,31 @@
-    /*pagina contacto*/
-    
-    .grilla__contacto {
-        display: grid;
-        grid-template-areas: "contenido3" "pie3";
-        grid-template-columns: 1fr;
-        grid-template-rows: 90% 10%;
-    }
-    
-    .contenidos {
-        grid-area: contenido3;
-    }
-    
-    .contenido {
-        &__titulo {
-            text-align: center;
+        /*pagina contacto*/
+        
+        .contenidos {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem 5rem;
+            align-items: center;
         }
-        &__subtitulo {
-            color: map-get($colores, "destacado");
-            font-family: 'Kodchasan', sans-serif;
-            padding-top: 2rem;
-        }
-        &__sectionf {
-            @include box;
-        }
-        &__boton {
-            padding: 1.2rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            @include vos;
-            &:hover {
-                padding: 2rem;
+        
+        .contenido {
+            &__titulo {
+                text-align: center;
+            }
+            &__subtitulo {
+                color: map-get($colores, "destacado");
+                font-family: 'Kodchasan', sans-serif;
+                padding-top: 2rem;
+            }
+            &__sectionf {
+                @include box;
+            }
+            &__boton {
+                padding: 1.2rem;
+                margin-top: 2rem;
+                margin-bottom: 1rem;
+                @include vos;
+                &:hover {
+                    padding: 2rem;
+                }
             }
         }
-    }
-    
-    .pie__contacto {
-        grid-area: pie3;
-    }

@@ -1,7 +1,7 @@
 /*mapa*/
+/* tipo de letra ,Reset y atributos para todas las paginas*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap");
-/*Reset y atributos para todas las paginas*/
 * {
   padding: 0%;
   margin: 0%;
@@ -25,7 +25,7 @@ li {
 li:hover {
   background: #ffd700; }
 
-/* media queries para todas las paginas exepto para algunos elementos */
+/* media queries para todas las paginas */
 h1 {
   font-size: 3rem;
   text-align: center; }

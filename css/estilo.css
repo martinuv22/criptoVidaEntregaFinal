@@ -106,6 +106,12 @@ footer {
     width: 70%;
     height: 70%; } }
 
+@media screen and (max-width: 450px) {
+  .div__imagen {
+    margin: 2%;
+    width: 50%;
+    height: 50%; } }
+
 .body__p {
   color: tomato; }
 
@@ -175,17 +181,16 @@ footer {
   padding-top: 4rem;
   color: #8713f5; }
 
-@media screen and (min-width: 1024px) {
-  .iframe2 {
-    width: 48rem;
-    height: 32rem; } }
+.iframe2 {
+  width: 48rem;
+  height: 32rem; }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1023px) {
   .iframe2 {
     width: 40rem;
     height: 32rem; } }
 
-@media screen and (min-width: 501px) {
+@media screen and (max-width: 680px) {
   .iframe2 {
     width: 25rem;
     height: 20rem; } }
@@ -194,6 +199,11 @@ footer {
   .iframe2 {
     width: 20rem;
     height: 20rem; } }
+
+@media screen and (max-width: 340px) {
+  .iframe2 {
+    width: 15rem;
+    height: 15rem; } }
 
 /* Pagina donde comprar carrousel*/
 .carousel__dondecomprar img {
@@ -247,7 +257,8 @@ footer {
   display: flex;
   flex-direction: column;
   height: 40rem;
-  align-items: center; }
+  align-items: center;
+  text-align: center; }
 
 .contenido__boton, .boton__info, .boton__recomendacion {
   padding: 1.2rem;
@@ -327,7 +338,8 @@ footer {
   display: flex;
   flex-direction: column;
   height: 40rem;
-  align-items: center; }
+  align-items: center;
+  text-align: center; }
 
 .suscripcion__boton {
   border-radius: 10%;

@@ -34,6 +34,14 @@
                     }
                 }
                 
+                @media screen and (max-width: 450px) {
+                    .div__imagen {
+                        margin: 2%;
+                        width: 50%;
+                        height: 50%;
+                    }
+                }
+                
                 .body__p {
                     color: map-get($colores, "destacado");
                 }

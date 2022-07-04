@@ -1,11 +1,16 @@
                 /*para index*/
                 
+                .principal__grilla {
+                    justify-content: center;
+                }
+                
                 .main_p1 {
                     color: map-get($colores, "blanco")
                 }
                 
                 .division {
                     color: map-get($colores, "dorado");
+                    text-align: center;
                 }
                 
                 .div__imagen {
@@ -21,11 +26,11 @@
                     }
                 }
                 
-                @media screen and (max-width: 425px) {
+                @media screen and (max-width: 650px) {
                     .div__imagen {
                         margin: 2%;
-                        width: 50%;
-                        height: 50%;
+                        width: 70%;
+                        height: 70%;
                     }
                 }
                 

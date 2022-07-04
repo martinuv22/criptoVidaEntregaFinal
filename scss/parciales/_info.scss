@@ -1,65 +1,88 @@
-/*pagina info*/
-
-.main__info {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 1rem 5rem;
-    align-items: center;
-}
-
-@media screen and (max-width: 576px) {
-    .main__info {
-        margin: 1rem 2rem;
-    }
-}
-
-@media screen and (min-width: 576px) {
-    .main__info {
-        margin: 1rem 3rem;
-    }
-}
-
-.sectionInfo {
-    padding-top: 4rem;
-    &__frase {
-        color: map-get($colores, "destacado");
-    }
-}
-
-.recordatorio__info {
-    padding-top: 4rem;
-    color: map-get($colores, "suscripcion");
-}
-
-@media screen and (max-width: 500px) {
-    .iframe2 {
-        width: 20rem;
-        height: 20rem;
-    }
-}
-
-@media screen and (min-width: 501px) {
-    .iframe2 {
-        width: 25rem;
-        height: 20rem;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .iframe2 {
-        width: 40rem;
-        height: 32rem;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .iframe2 {
-        width: 48rem;
-        height: 32rem;
-    }
-}
-
-.boton__info {
-    @extend .contenido__boton
-}
+                /*pagina info*/
+                
+                .grilla__info {
+                    @include grilla;
+                    margin: 1rem 2rem;
+                }
+                
+                @media screen and (max-width: 1023px) {
+                    .grilla__info {
+                        grid-template-columns: 1fr;
+                    }
+                }
+                
+                @media screen and (max-width: 576px) {
+                    .grilla__info {
+                        margin: 1rem;
+                        grid-template-columns: 1fr;
+                    }
+                }
+                
+                @media screen and (max-width: 400px) {
+                    .grilla__info {
+                        margin: 0.5rem;
+                        grid-template-columns: 1fr;
+                    }
+                }
+                
+                .part {
+                    @include max;
+                }
+                
+                @media screen and (max-width: 760px) {
+                    .part {
+                        @include reposive1;
+                    }
+                }
+                
+                @media screen and (max-width: 500px) {
+                    .part {
+                        @include reposive2;
+                    }
+                }
+                
+                .sectionInfo {
+                    padding-top: 1rem;
+                    text-align: center;
+                    align-items: center;
+                    &__frase {
+                        color: map-get($colores, "destacado");
+                    }
+                }
+                
+                .recordatorio__info {
+                    padding-top: 4rem;
+                    color: map-get($colores, "suscripcion");
+                }
+                
+                @media screen and (min-width: 1024px) {
+                    .iframe2 {
+                        width: 48rem;
+                        height: 32rem;
+                    }
+                }
+                
+                @media screen and (min-width: 768px) {
+                    .iframe2 {
+                        width: 40rem;
+                        height: 32rem;
+                    }
+                }
+                
+                @media screen and (min-width: 501px) {
+                    .iframe2 {
+                        width: 25rem;
+                        height: 20rem;
+                    }
+                }
+                
+                @media screen and (max-width: 500px) {
+                    .iframe2 {
+                        width: 20rem;
+                        height: 20rem;
+                    }
+                }
+                
+                .boton__info {
+                    @extend .contenido__boton
+                }

@@ -1,12 +1,7 @@
 /*paginas recomendaciones*/
 
 .grilla_recomendacion {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-    align-items: start;
-    justify-content: start;
-    grid-template-rows: 1fr 1fr;
+    @include grilla;
 }
 
 @media screen and (max-width: 1024px) {
@@ -25,30 +20,18 @@
 }
 
 .cripto {
-    padding: 5rem;
-    &__imagen {
-        height: 50vh;
-        width: 80vh;
-    }
+    @include max;
 }
 
 @media screen and (max-width: 500px) {
     .cripto {
-        padding: 1rem;
-        &__imagen {
-            height: 50vh;
-            width: 50vh;
-        }
+        @include reposive1;
     }
 }
 
 @media screen and (max-width: 760px) {
     .cripto {
-        padding: 3rem;
-        &__imagen {
-            height: 50vh;
-            width: 60vh;
-        }
+        @include reposive2;
     }
 }
 

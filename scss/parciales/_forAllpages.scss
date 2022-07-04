@@ -35,25 +35,28 @@ li:hover {
 
 /* media queries para todas las paginas exepto para algunos elementos */
 
-@media (max-width: 576px) {
-    h1 {
-        font-size: 1.8rem;
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
-    h3 {
-        font-size: 1.2rem;
-    }
-    p {
-        font-size: 1rem;
-    }
-    footer {
-        font-size: 1rem;
-    }
+h1 {
+    font-size: 3rem;
+    text-align: center;
 }
 
-@media (min-width: 577px) {
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+footer {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
     h1 {
         font-size: 2rem;
     }
@@ -71,20 +74,38 @@ li:hover {
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 576px) {
     h1 {
-        font-size: 3rem;
+        font-size: 1.6rem;
     }
     h2 {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
     h3 {
-        font-size: 2.2rem;
+        font-size: 1.2rem;
     }
     p {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     footer {
-        font-size: 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+    footer {
+        font-size: 0.8rem;
     }
 }

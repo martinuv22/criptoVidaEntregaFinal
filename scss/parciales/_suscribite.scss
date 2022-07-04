@@ -1,33 +1,41 @@
-/*paginas sucripciones*/
-
-.grilla__suscribite {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 5rem;
-    align-items: center;
-}
-
-.suscripcion {
-    &__titulo {
-        text-align: center;
+    /*paginas sucripciones*/
+    
+    .grilla__suscribite {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 5rem;
+        align-items: center;
     }
-    &__subtitulo {
-        color: map-get($colores, "destacado");
-        font-family: 'Kodchasan', sans-serif;
-    }
-    &__sectionf {
-        @include box;
-    }
-    &__boton {
-        @include vos;
-        padding: 2.2rem;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        &:hover {
-            padding: 5rem;
+    
+    .suscripcion {
+        &__titulo {
+            text-align: center;
+        }
+        &__subtitulo {
+            color: map-get($colores, "destacado");
+            font-family: 'Kodchasan', sans-serif;
+        }
+        &__sectionf {
+            @include box;
+        }
+        &__boton {
+            @include vos;
+            padding: 2.2rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            &:hover {
+                padding: 5rem;
+            }
+        }
+        &__aviso {
+            color: map-get($colores, "suscripcion");
+        }
+        &__aviso2 {
+            color: map-get($colores, "suscripcion");
+            @media screen and (max-width: 300px) {
+                & {
+                    display: none;
+                }
+            }
         }
     }
-    &__aviso {
-        color: map-get($colores, "suscripcion");
-    }
-}

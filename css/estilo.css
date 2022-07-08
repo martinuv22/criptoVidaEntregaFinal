@@ -128,6 +128,9 @@ footer {
     padding: 2rem; }
 
 /*pagina info*/
+.footer_pages {
+  bottom: 100%; }
+
 .grilla__info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

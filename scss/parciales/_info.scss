@@ -1,5 +1,9 @@
                 /*pagina info*/
                 
+                .footer_pages {
+                    bottom: 100%;
+                }
+                
                 .grilla__info {
                     @include grilla;
                     margin: 1rem 2rem;
